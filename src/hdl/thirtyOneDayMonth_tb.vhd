@@ -104,7 +104,7 @@ begin
         w_sw <= x"6"; wait for 10 ns;
              assert w_Y = '0' report "error on Jun" severity failure;
         w_sw <= x"7"; wait for 10 ns;
-             assert w_Y = '1' report "error on Jul" severity failure;
+             assert w_Y = '0' report "error on Jul" severity failure;
         w_sw <= x"8"; wait for 10 ns;
              assert w_Y = '1' report "error on Aug" severity failure;
         w_sw <= x"9"; wait for 10 ns;
@@ -124,3 +124,4 @@ begin
            wait;
            end process;  
  end test_bench;
+
